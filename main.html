@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Phasmophobia - Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="main.html">Accueil</a></li>
+        <li><a href="lobby.html">Lobby Phasmophobia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <div class="filter-search-container">
+    <div class="dropdown">
+      <button id="filterButton">Filtre</button>
+      <div id="dropdownContent" class="dropdown-content">
+        <label><input type="checkbox" value="EMF niveau 5"> EMF niveau 5</label>
+        <label><input type="checkbox" value="Ultraviolet"> Ultraviolet</label>
+        <label><input type="checkbox" value="Écriture fantomatique"> Écriture fantomatique</label>
+        <label><input type="checkbox" value="Températures glaciales"> Températures glaciales</label>
+        <label><input type="checkbox" value="Projecteur D.O.T.S"> Projecteur D.O.T.S</label>
+        <label><input type="checkbox" value="Orbe fantomatique"> Orbe fantomatique</label>
+        <label><input type="checkbox" value="Spirit Box"> Spirit Box</label>
+      </div>
+    </div>
+    <input type="text" id="searchBar" placeholder="Rechercher...">
+  </div>
+
+  <div class="ghost-list">
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/esprit.html'" data-preuves="EMF niveau 5,Spirit Box,Écriture fantomatique">
+      <h2>Esprit</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Spirit Box</p>
+        <p>Écriture fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/spectre.html'" data-preuves="EMF niveau 5,Spirit Box,Projecteur D.O.T.S">
+      <h2>Spectre</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Spirit Box</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/fantome.html'" data-preuves="Spirit Box,Ultraviolet,Projecteur D.O.T.S">
+      <h2>Fantôme</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Ultraviolet</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/poltergeist.html'" data-preuves="Spirit Box,Ultraviolet,Écriture fantomatique">
+      <h2>Poltergeist</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Ultraviolet</p>
+        <p>Écriture fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/banshee.html'" data-preuves="Ultraviolet,Orbe fantomatique,Projecteur D.O.T.S">
+      <h2>Banshee</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Ultraviolet</p>
+        <p>Orbe fantomatique</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/djinn.html'" data-preuves="EMF niveau 5,Ultraviolet,Températures glaciales">
+      <h2>Djinn</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Ultraviolet</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/cauchemar.html'" data-preuves="Spirit Box,Orbe fantomatique,Écriture fantomatique">
+      <h2>Cauchemar</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Orbe fantomatique</p>
+        <p>Écriture fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/revenant.html'" data-preuves="Orbe fantomatique,Écriture fantomatique,Températures glaciales">
+      <h2>Revenant</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Orbe fantomatique</p>
+        <p>Écriture fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/ombre.html'" data-preuves="EMF niveau 5,Écriture fantomatique,Températures glaciales">
+      <h2>Ombre</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Écriture fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/demon.html'" data-preuves="Ultraviolet,Écriture fantomatique,Températures glaciales">
+      <h2>Démon</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Ultraviolet</p>
+        <p>Écriture fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/yurei.html'" data-preuves="Orbe fantomatique,Températures glaciales,Projecteur D.O.T.S">
+      <h2>Yurei</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Orbe fantomatique</p>
+        <p>Températures glaciales</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/oni.html'" data-preuves="EMF niveau 5,Températures glaciales,Projecteur D.O.T.S">
+      <h2>Oni</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Températures glaciales</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/yokai.html'" data-preuves="Spirit Box,Orbe fantomatique,Projecteur D.O.T.S">
+      <h2>Yokai</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Orbe fantomatique</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/hantu.html'" data-preuves="Ultraviolet,Orbe fantomatique,Températures glaciales">
+      <h2>Hantu</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Ultraviolet</p>
+        <p>Orbe fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/goryo.html'" data-preuves="EMF niveau 5,Ultraviolet,Projecteur D.O.T.S">
+      <h2>Goryo</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Ultraviolet</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/myling.html'" data-preuves="EMF niveau 5,Ultraviolet,Écriture fantomatique">
+      <h2>Myling</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Ultraviolet</p>
+        <p>Écriture fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/onryo.html'" data-preuves="Spirit Box,Orbe fantomatique,Températures glaciales">
+      <h2>Onryo</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Orbe fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/lesjumeaux.html'" data-preuves="EMF niveau 5,Spirit Box,Températures glaciales">
+      <h2>Les Jumeaux</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Spirit Box</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/raiju.html'" data-preuves="EMF niveau 5,Orbe fantomatique,Projecteur D.O.T.S">
+      <h2>Raiju</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Orbe fantomatique</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/obake.html'" data-preuves="EMF niveau 5,Ultraviolet,Orbe fantomatique">
+      <h2>Obake</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>EMF niveau 5</p>
+        <p>Ultraviolet</p>
+        <p>Orbe fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/mimic.html'" data-preuves="Spirit Box,Ultraviolet,Températures glaciales,Orbe fantomatique">
+      <h2>Le Mimic</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Ultraviolet</p>
+        <p>Températures glaciales</p>
+        <p style="color: red;">Orbe fantomatique</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/moroi.html'" data-preuves="Spirit Box,Écriture fantomatique,Températures glaciales">
+      <h2>Moroï</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Écriture fantomatique</p>
+        <p>Températures glaciales</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/deogen.html'" data-preuves="Spirit Box,Écriture fantomatique,Projecteur D.O.T.S">
+      <h2>Deogen</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Spirit Box</p>
+        <p>Écriture fantomatique</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+    <div class="ghost-card" onclick="window.location.href='fantomes/thaye.html'" data-preuves="Orbe fantomatique,Écriture fantomatique,Projecteur D.O.T.S">
+      <h2>Thayé</h2><br>
+      <p><strong>Preuves :</strong></p><br>
+      <ul>
+        <p>Orbe fantomatique</p>
+        <p>Écriture fantomatique</p>
+        <p>Projecteur D.O.T.S</p>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

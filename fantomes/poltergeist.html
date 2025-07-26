@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Poltergeist - Phasmophobia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Style global -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Style spécifique Poltergeist -->
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000 0%, #1a1a1a 100%);
+      font-family: 'Cinzel Decorative', serif;
+      color: #e0e0e0;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 120px;
+      left: 30px;
+      background-color: #222;
+      color: #eee;
+      border: 1px solid #444;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background 0.3s, color 0.3s;
+      z-index: 10;
+    }
+
+    .back-button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 200px auto 50px auto;
+      padding: 40px;
+      background-color: rgba(20, 20, 20, 0.95);
+      border-radius: 16px;
+      border: 1px solid #444;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      text-align: left;
+    }
+
+    .main-title {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 0 0 20px #000;
+      color: #ffffff;
+    }
+
+    section h2 {
+      margin-top: 30px;
+      font-size: 1.6em;
+      color: #ffa366;
+      text-shadow: 0 0 5px #000;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #d0d0d0;
+    }
+
+    section ul {
+      margin-left: 25px;
+      margin-top: 10px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #d0d0d0;
+    }
+
+    section ul li {
+      list-style-type: square;
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      main {
+        margin: 150px 20px 30px 20px;
+        padding: 25px;
+      }
+
+      .main-title {
+        font-size: 2em;
+      }
+
+      .back-button {
+        top: 100px;
+        left: 15px;
+        font-size: 0.9em;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="../main.html">Accueil</a></li>
+        <li><a href="../lobby.html">Lobby Phasmophobia</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bouton retour -->
+  <a href="../main.html" class="back-button">← Retour</a>
+
+  <main>
+    <h1 class="main-title">Poltergeist</h1>
+
+    <section>
+      <h2>Description</h2>
+      <p>
+        L'une des entités les plus célèbres, le Poltergeist. Ils sont connus pour manipuler les objets autour de leurs victimes afin de les effrayer.
+      </p>
+
+      <h2>Force</h2>
+      <p>
+        Les Poltergeist peuvent jeter plusieurs objets en même temps avec une grande force.
+      </p>
+
+      <h2>Faiblesse</h2>
+      <p>
+        Lorsqu'ils n'ont rien à jeter, les Poltergeist sont considérablement affaiblis.
+      </p>
+
+      <h2>Preuves</h2>
+      <ul>
+        <li>Spirit Box</li>
+        <li>Ultraviolet</li>
+        <li>Écriture fantomatique</li>
+      </ul>
+
+      <h2>Capacité spéciale</h2>
+      <p>
+        La compétence du Poltergeist lui permet de créer une « tempête d'objets » : il peut lancer une dizaine d'objets tout autour de lui dans sa pièce favorite avec une très grande puissance. 
+        De plus, il est capable de jeter un seul objet à la fois plus loin que les autres entités.
+      </p>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

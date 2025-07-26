@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Cinzel Decorative', serif;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav .menu li a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+main {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px #000;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Filtre + Recherche */
+.filter-search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+}
+
+#filterButton {
+    background: #222;
+    color: #ddd;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+#filterButton:hover {
+    background: #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 10px;
+    z-index: 1;
+    min-width: 220px;
+    box-shadow: 0 0 10px #000;
+}
+
+.dropdown-content label {
+    display: block;
+    color: #ccc;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.dropdown-content input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #888;
+}
+
+#searchBar {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #444;
+    background: #1a1a1a;
+    color: #eee;
+    outline: none;
+    min-width: 220px;
+}
+
+#searchBar::placeholder {
+    color: #777;
+}
+
+.ghost-card {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.ghost-card:hover {
+    transform: scale(1.05);
+    background-color: #2a2a2a;
+}
+
+.ghost-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #f2f2f2;
+}
+
+.ghost-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+.ghost-card li {
+    margin-bottom: 5px;
+}
+
+.ghost-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ghost-card ul p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
