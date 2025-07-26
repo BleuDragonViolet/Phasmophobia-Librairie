@@ -183,20 +183,20 @@ main {
     max-width: 250px;
 }
 
-/* Responsive pour téléphone */
 @media screen and (max-width: 768px) {
     nav .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 10px 0;
-    }
-
-    nav {
-        padding: 10px 0;
+        gap: 15px; /* Réduction de l'espacement */
+        flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+        justify-content: center;
     }
 
     nav .menu li a {
-        font-size: 1.2em;
+        font-size: 0.8em; /* Réduction de la taille des liens */
+        padding: 5px; /* Ajoute un peu d'espace cliquable */
+    }
+
+    nav {
+        padding: 10px 5px; /* Réduit la hauteur du header */
     }
 }
+
