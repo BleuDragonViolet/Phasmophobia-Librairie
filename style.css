@@ -183,23 +183,5 @@ main {
     max-width: 250px;
 }
 
-@media screen and (max-width: 768px) {
-    nav .menu {
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        gap: 5px;
-        padding: 0 10px;
-    }
-
-    nav .menu li a {
-        font-size: 0.7em;
-        padding: 6px 8px;
-    }
-
-    nav {
-        padding: 10px 0;
-    }
-}
-
 
 
